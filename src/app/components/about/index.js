@@ -70,11 +70,7 @@ export const About = () => {
                                             </li>
                                             <li>
                                                 <a className="smoothScroll" href="#resume" title=""
-                                                   onClick={(e) => {
-                                                       e.preventDefault(); // Prevent the default anchor link behavior
-                                                       setIsMenuOpen(!isMenuOpen)
-                                                   }}
-                                                >
+                                                onClick={() => setIsMenuOpen(!isMenuOpen)}>
                                                     Experience
                                                 </a>
                                             </li>
