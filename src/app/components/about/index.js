@@ -183,12 +183,11 @@ export const About = () => {
                                         </li>
                                         <li>
                                             <strong>Website:</strong>
-                                            <span>www.ayushmathur.com</span>
+                                            <span>ayush-portfolio-ayush919s-projects.vercel.app/</span>
                                         </li>
                                         <li>
                                             <strong>Email:</strong>
-                                            <span>ayushmathur919@gmail.com {"\n"}<br/> </span><span
-                                            style={{paddingTop: '5px'}}>mathurayush82@gmail.com</span>
+                                            <span>ayushmathur919@gmail.com {"\n"}<br/> </span>
                                         </li>
 
                                     </ul>
@@ -244,6 +243,10 @@ export const About = () => {
                                         <li>
                                             <div className="progress percent80"><span>80%</span></div>
                                             <strong>Postgres</strong>
+                                        </li>
+                                        <li>
+                                            <div className="progress percent80"><span>70%</span></div>
+                                            <strong>MongoDB</strong>
                                         </li>
                                         <li>
                                             <div className="progress percent90"><span>90%</span></div>
@@ -935,7 +938,6 @@ export const About = () => {
                                     <h5>Email Me At</h5>
 
                                     <p>ayushmathur919@gmail.com<br/>
-                                        mathurayush82@gmail.com
                                     </p>
 
                                 </div>
