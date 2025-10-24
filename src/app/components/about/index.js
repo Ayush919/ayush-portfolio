@@ -642,7 +642,7 @@ export const About = () => {
                                             </div>
 
                                             <h3 className="stat-count">
-                                                6
+                                                10
                                             </h3>
 
                                             <h5 className="stat-title">
@@ -658,7 +658,7 @@ export const About = () => {
                                             </div>
 
                                             <h3 className="stat-count">
-                                                4
+                                                6
                                             </h3>
 
                                             <h5 className="stat-title">
@@ -674,7 +674,7 @@ export const About = () => {
                                             </div>
 
                                             <h3 className="stat-count">
-                                                3
+                                                4
                                             </h3>
 
                                             <h5 className="stat-title">
