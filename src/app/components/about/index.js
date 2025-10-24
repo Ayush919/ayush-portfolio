@@ -6,6 +6,8 @@ import '../../css/main.css'
 import '../../css/vendor.css'
 import {introdata,} from "../../../content_option";
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
 
 
 export const About = () => {
@@ -70,7 +72,7 @@ export const About = () => {
                                             </li>
                                             <li>
                                                 <a className="smoothScroll" href="#resume" title=""
-                                                onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                                                   onClick={() => setIsMenuOpen(!isMenuOpen)}>
                                                     Experience
                                                 </a>
                                             </li>
@@ -133,10 +135,13 @@ export const About = () => {
                             </div>
 
                             <ul className="intro-social">
-                             <li><a href="https://www.linkedin.com/in/ayush-mathur-658428197/"
+                                <li><a href="https://www.linkedin.com/in/ayush-mathur-658428197/"
                                        target={"_blank"} rel="noreferrer"><i className="fa fa-linkedin"></i></a>
                                 </li>
                                 <li><a href="https://www.hackerrank.com/profile/ayushmathur919"
+                                       target={"_blank"} rel="noreferrer"><FontAwesomeIcon icon={faHackerrank} /></a>
+                                </li>
+                                <li><a href="https://leetcode.com/u/ayushmathur919/"
                                        target={"_blank"} rel="noreferrer"><i className="fa fa-code"></i></a>
                                 </li>
                             </ul>
@@ -153,11 +158,15 @@ export const About = () => {
                                     <h1>Let me introduce myself.</h1>
 
                                     <div className="intro-info">
+                                        <div className="profile-image">
+                                            <img src="/images/profile-pic.jpg" alt="Profile Picture"/>
+                                        </div>
 
-                                        <img src="/images/profile-pic.png" alt="Profile Picture"/>
-
-                                        <p className="lead">{introdata.description}</p>
+                                        <div className="profile-text">
+                                            <p className="lead">{introdata.description}</p>
+                                        </div>
                                     </div>
+
 
                                 </div>
                             </div>
@@ -166,7 +175,7 @@ export const About = () => {
 
                                 <div className="col-six tab-full">
 
-                                    <h3>Profile</h3>
+                                <h3>Profile</h3>
 
                                     <ul className="info-list">
                                         <li>
@@ -359,231 +368,111 @@ export const About = () => {
                             </div>
 
                         </section>
-                        <section id="portfolio">
+                        <section id="portfolio" className="portfolio-section">
 
-                            <div className="row section-intro">
-                                <div className="col-twelve">
-
-                                    <h5>PROJECTS</h5>
-                                    <h1>Check Out Some of My Works.</h1>
-
-                                    <p className="lead">{introdata.myWork}</p>
-
-                                </div>
+                            <div className="intro">
+                                <h5>PROJECTS</h5>
+                                <h1>Check Out Some of My Works.</h1>
+                                <p className="lead">{introdata.myWork}</p>
                             </div>
 
-                            <div className="row portfolio-content">
-
-                                <div className="col-twelve">
-
-                                    <div id="folio-wrapper" className="block-1-2 block-mob-full stack">
-
-                                        <div className="bgrid folio-item">
-                                            <div className="item-wrap">
-                                                <img src="/images/portfolio/gold.jpg" alt="Liberty"/>
-                                                <a href="https://www.mmtcpamp.com/" className="overlay"
-                                                   target={"_blank"} rel="noreferrer">
-                                                    <div className="folio-item-table">
-                                                        <div className="folio-item-cell">
-                                                            <h3 className="folio-title">MMTC PAMP</h3>
-                                                            <span className="folio-types">
-		     					       	  Front-End Developer
-		     					       </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
+                            <div className="portfolio-grid">
+                                {/* Project 1 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/gold.jpg" alt="MMTC PAMP"/>
+                                    <a
+                                        href="https://www.mmtcpamp.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>MMTC PAMP</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Front-End Developer</h2>
                                         </div>
-
-                                        <div className="bgrid folio-item">
-                                            <div className="item-wrap">
-                                                <img src="/images/portfolio/study.jpg" alt="Shutterbug"/>
-                                                <a href="https://www.app.viaductlearn.com/" className="overlay"
-                                                   target={"_blank"} rel="noreferrer">
-                                                    <div className="folio-item-table">
-                                                        <div className="folio-item-cell">
-                                                            <h3 className="folio-title">Viaduct</h3>
-                                                            <span className="folio-types">
-		     					       	  Back-End Developer
-		     					      </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div className="bgrid folio-item">
-                                            <div className="item-wrap">
-                                                <img src="/images/portfolio/tourism.jpg" alt="Clouds"/>
-                                                <a href="https://rsth.info/" className="overlay" target={"_blank"}
-                                                   rel="noreferrer">
-                                                    <div className="folio-item-table">
-                                                        <div className="folio-item-cell">
-                                                            <h3 className="folio-title">MOT</h3>
-                                                            <span className="folio-types">
-		     					       	  Front-End Developer
-		     					      </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div className="bgrid folio-item">
-                                            <div className="item-wrap">
-                                                <img src="/images/portfolio/basmati.jpg" alt="Beetle"/>
-                                                <a href="https://master.d31ijq6kxmo9cl.amplifyapp.com/login"
-                                                   className="overlay" target={"_blank"} rel="noreferrer">
-                                                    <div className="folio-item-table">
-                                                        <div className="folio-item-cell">
-                                                            <h3 className="folio-title">Nano Basmati</h3>
-                                                            <span className="folio-types">
-		     					       	  Front-End Developer
-		     					                      </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-
-                                        <div id="modal-01" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="/images/portfolio/modals/m-liberty.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Liberty</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Web Development</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="modal-02" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="images/portfolio/modals/m-shutterbug.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Shutterbug</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Web Design</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="modal-03" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="images/portfolio/modals/m-clouds.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Clouds</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Web Design</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="modal-04" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="images/portfolio/modals/m-beetle.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Beetle</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Branding</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="modal-05" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="images/portfolio/modals/m-lighthouse.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Lighthouse</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Web Development</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="modal-06" className="popup-modal slider mfp-hide">
-
-                                            <div className="media">
-                                                <img src="images/portfolio/modals/m-salad.jpg" alt=""/>
-                                            </div>
-
-                                            <div className="description-box">
-                                                <h4>Salad</h4>
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                                    lorem quis bibendum auctor,
-                                                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-                                                <div className="categories">Branding</div>
-                                            </div>
-
-                                            <div className="link-box">
-                                                <a href="http://www.behance.net">Details</a>
-                                                <a href="#" className="popup-modal-dismiss">Close</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
+                                    </a>
                                 </div>
 
-                            </div>
+                                {/* Project 2 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/study.jpg" alt="Viaduct"/>
+                                    <a
+                                        href="https://www.app.viaductlearn.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>Viaduct</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Full-Stack Developer</h2>
+                                        </div>
+                                    </a>
+                                </div>
 
+                                {/* Project 3 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/foodies-only.avif" alt="Foodies Only"/>
+                                    <a
+                                        href="https://foodiesonly.in/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>Foodies Only</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Full-Stack Developer</h2>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                {/* Project 4 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/rsth.png" alt="MOT"/>
+                                    <a
+                                        href="https://rsth.info/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>MOT</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Front-End Developer</h2>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                {/* Project 5 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/basmati.jpg" alt="Nano Basmati"/>
+                                    <a
+                                        href="https://master.d31ijq6kxmo9cl.amplifyapp.com/login"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>Nano Basmati</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Full-Stack Developer</h2>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                {/* Project 6 */}
+                                <div className="portfolio-item">
+                                    <img src="/images/portfolio/ez-grow-infra.webp" alt="Nano Basmati"/>
+                                    <a
+                                        href="https://the-real-state.vercel.app/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overlay"
+                                    >
+                                        <div className="content">
+                                            <h1 style={{"color":"#423e3e"}}>Ez Grow Infra</h1>
+                                            <h2 style={{"color":"#4c4c4c"}}>Full-Stack Developer</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </section>
 
 
