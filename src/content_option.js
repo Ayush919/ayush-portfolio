@@ -12,7 +12,7 @@ const introdata = {
         third: "Passionate about creating web experiences.",
         forth: "Let's build something amazing together!"
     },
-    description: "Experienced Full Stack Developer with over 3 years of expertise in creating scalable and user-friendly web\n" +
+    description: "Experienced Full Stack Developer with over 3.5+ years of expertise in creating scalable and user-friendly web\n" +
         "applications. Proficient in crafting visually appealing user interfaces, enhancing code quality, and managing\n" +
         "server-side logic and databases. Proven track record of delivering high-quality software solutions tailored to\n" +
         "client and stakeholder needs, while staying updated with industry best practices.",
